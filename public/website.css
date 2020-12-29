@@ -1,0 +1,94 @@
+body {
+	background-color: steelblue;
+}
+
+div.container {
+	background-color: white;
+  margin-top: 15px
+}
+
+div.row {
+  margin-bottom: 30px;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+h2 {
+  text-align: center;
+  width: 80%;
+  margin: 30px auto;
+}
+
+#myRange, #btnSubmit {
+  width: 100%;
+  height: 35px;
+}
+
+#beat_pct {
+    color: red;
+    font-size: 24pt;
+    font-weight: bold;
+}
+
+#output {
+  height: 450px;
+  border: solid 1px black;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  height: 35px;
+  appearance: none;
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  height: 35px;
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 35px;
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+@keyframes spinner-border {
+  to { transform: rotate(360deg); }
+} 
+.spinner-border{
+    margin: 75px auto;
+    width: 100px;
+    height: 100px;
+    vertical-align: text-bottom;
+    border: .25em solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    -webkit-animation: spinner-border .75s linear infinite;
+    animation: spinner-border .75s linear infinite;
+}
+.spinner-border-sm{
+    height: 1rem;
+    border-width: .2em;
+}
