@@ -92,3 +92,7 @@ h2 {
     height: 1rem;
     border-width: .2em;
 }
+
+div.carousel-item.active {
+  height: 500px;
+}

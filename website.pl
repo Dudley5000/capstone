@@ -56,6 +56,69 @@ __DATA__
 				</div>
 			</div>
 		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h1>Data Visualizations</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="thumbnail">
+						<a href="heatmap.png">
+							<img src="heatmap.png" alt="Seaborn Heatmap" style="width:100%">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="thumbnail">
+						<a href="improvement.png">
+							<img src="improvement.png" alt="Improvement by Percentages" style="width:100%">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="thumbnail">
+						<a href="kmeans-cluster-pca.png">
+							<img src="kmeans-cluster-pca.png" alt="KMeans PCA" style="width:100%">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<h2>Pre-Normalized Data Comparison</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="thumbnail">
+						<a href="pre-normalized.png">
+							<img src="pre-normalized.png" alt="Pre-Normalized Data Comparison" style="width:100%">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<h2>Post-Normalized Data Comparison</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="thumbnail">
+						<a href="post-normalized.png">
+							<img src="post-normalized.png" alt="Post-Normalized Data Comparison" style="width:100%">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
@@ -95,12 +158,12 @@ __DATA__
 							str += '                ---------------------\n\n';
 							str += ret.classification_report;
 						}
-					$('#output').html('<pre>'+str+'</pre>');
-				},
-				dataType: 'json'
-				});
+				$('#output').html('<pre>'+str+'</pre>');
+			},
+			dataType: 'json'
 			});
 		});
+	});
 	</script>
 </body>
 </html>
